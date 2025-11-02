@@ -33,7 +33,7 @@ const App = () => (
             <Route path="/club/:clubId/tournaments" element={<ClubTournaments />} />
             <Route path="/admin/users" element={<AdminUsers />} />
             <Route path="/club/:clubId/tournaments/:tournamentId/results" element={<TournamentResults />} />
-            <Route path="/admin/users" element={<(await import('./pages/AdminUsers')).default />} />\n            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </AuthProvider>
       </BrowserRouter>
