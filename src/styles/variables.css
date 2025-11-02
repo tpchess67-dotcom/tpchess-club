@@ -1,0 +1,11 @@
+:root{
+  --club-color-echecs: #01559d;
+  --club-color-belote: #428f8c;
+  --club-color-baby: #eb9f3f;
+  --club-color-default: #6b7280;
+}
+
+/* Utilities to use variables inline */
+.club-secondary {
+  background-color: var(--club-secondary, var(--club-color-default));
+}
