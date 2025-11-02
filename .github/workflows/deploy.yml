@@ -31,6 +31,9 @@ jobs:
       - name: Build
         # Utilise le script 'build' de votre package.json
         run: npm run build 
+        env: # <-- AJOUTEZ CES LIGNES
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
         
       - name: Setup Pages
         uses: actions/configure-pages@v5
